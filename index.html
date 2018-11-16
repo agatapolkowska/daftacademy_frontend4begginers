@@ -31,30 +31,7 @@
             </ul>
         </nav>
     </header>
-                
-                <nav class="side_menu_icons">
-                    <div class="side_menu_icons_item">
-                        <a href="https://www.facebook.com/6BMband/" target="_blank">
-                            <img src="img/fb.svg" alt="facebook icon">
-                        </a>
-                    </div>
-                    <div class="side_menu_icons_item">
-                        <a href="https://www.instagram.com/6bmband/?hl=pl" target="_blank">
-                            <img src="img/insta.svg" alt="instagram icon">
-                        </a>
-                    </div>
-                    <div class="side_menu_icons_item">
-                        <a href="https://www.last.fm/pl/music/6bm" target="_blank">
-                            <img src="img/last.svg" alt="lastfm icon">
-                        </a>
-                    </div>
-                    <div class="side_menu_icons_item">
-                        <a href="https://www.youtube.com/channel/UCDqm0F_UFieDt_C4TRPbepQ" target="_blank">
-                            <img src="img/yout.svg" alt="youtube icon">
-                        </a>
-                    </div>
-                </nav>
-   
+
 <!-- MAIN -->
 
     <main class="page-content"> 
@@ -193,36 +170,60 @@
             </ul>
         </section>
 
+        <!-- CONTACT -->
 
-<!-- CONTACT -->
-    <section id="contact">
-        <div class="section_heading">
-            <h2>CONTACT</h2>
-        </div>
-
-        <div class="contact_image">
-            <img src="img/band12.jpg">
-        </div>
-
-        <address class=contact_details>
-            <p>Tel: 00 48 999 00 00</p>
-            <p>e-mail: 6bmband@mail.mail</p>
-        </address>
+        <section id="contact" class="content-section">
+            <h2 class="content-section__header">Contact</h2>
         
-        <div class="contact_form">
-            <form class="contact_us">
-                <label>Email</label>
-                <input type="text">
-                <br>
-                <label>Topic</label>
-                <input type="text">
-                <br>
-                <button class="contact_button">CONTACT US!</button>
+            <img  class="contact-image" src="img/band12.jpg" alt="Band members posing next to a train">
+
+            <address class=contact-details>
+                Tel: 00 48 999 00 00 <br>
+                e-mail: 6bmband@mail.mail
+            </address>
+        
+            <form class="form">
+                <div class="form__field">
+                    <label class="form__label" for="email">Email</label>
+                    <input class="form__input" type="email" name="email" id="email" required>
+                </div>
+                <div class="form__field">
+                    <label class="form__label" for="topic">Topic</label>
+                    <input class="form__input" type="text" name="topic" id="topic" required>
+                </div>
+                <div class="form__field">
+                    <button class="button" type="submit">Contact us!</button>
+                </div>
             </form>
-        </div>
-    </section>
+        </section>
+    </main>
 
-</main>
-
+<!-- FOOTER -->
+    <footer class="page-footer">
+        <h2 class="screen-reader-only">Social media links</h2>
+                    
+        <ul class="social-links">
+            <li class="social-links__item">
+                <a class="social-links__link" href="https://www.facebook.com/6BMband/" target="_blank">
+                    <img class="social-links__icon" src="img/fb.svg" alt="Facebook icon">
+                </a>
+            </li>
+            <li class="social-links__item">
+                <a class="social-links__link" href="https://www.instagram.com/6bmband/?hl=pl" target="_blank">
+                    <img class="social-links__icon" src="img/insta.svg" alt="Instagram icon">
+                </a>
+            </li>
+            <li class="social-links__item">
+                <a class="social-links__link" href="https://www.last.fm/pl/music/6bm" target="_blank">
+                    <img class="social-links__icon" src="img/last.svg" alt="Lastfm icon">
+                </a>
+            </li>
+            <li class="social-links__item">
+                <a class="social-links__link" href="https://www.youtube.com/channel/UCDqm0F_UFieDt_C4TRPbepQ" target="_blank">
+                    <img class="social-links__icon" src="img/yout.svg" alt="Youtube icon">
+                </a>
+            </li>
+        </ul>
+    </footer>
 </body>
 </html>
