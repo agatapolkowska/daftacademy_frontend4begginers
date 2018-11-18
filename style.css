@@ -127,3 +127,16 @@ body {
 .button {
     position: relative;
 }
+
+
+/* VIDEO */
+iframe {
+    position: relative;
+    float: right;
+    margin-top: 30px;
+    width: 70%;
+    background: green;
+    overflow: hidden;
+    border-top: 3px solid yellow;
+}
+
