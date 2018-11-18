@@ -29,6 +29,8 @@ body {
 .social-links__item {
     list-style-type: none
 }
+
+
 /* MAIN */
 .screen-reader-only {
     color: transparent
@@ -54,6 +56,7 @@ body {
     padding-top: 75px;
 }
 
+
 /* BAND MEMBERS */
 .band-members {
     display: flex;
@@ -68,4 +71,26 @@ body {
     min-width: 200px;
 
     background-color:purple;
+}
+
+
+/* ABOUT */
+.about-section__img {
+    float: right;
+    width: 60%;
+    min-width: 200px;
+
+    border-top: 3px solid blue;
+}
+
+.about-section__desc {
+    position: relative;
+        left: 25%;
+    margin-top: 30%;
+    margin-right: 5%;
+    width: 20%;
+    min-width: 300px;
+
+    background: green;
+    border-bottom: 3px solid blue;
 }
