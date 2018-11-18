@@ -94,3 +94,8 @@ body {
     background: green;
     border-bottom: 3px solid blue;
 }
+
+.about-section__desc-header{
+    display: flex;
+    flex-wrap: wrap;
+}
