@@ -99,3 +99,31 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
+
+/* CONCERTS */
+.concerts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-left: 20%; 
+
+    background: blue;
+}
+
+.concerts__item {
+    width: 30%;
+    margin: 10px 0px 20px 40px;
+    min-width: 200px
+
+}
+
+.concerts__image {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid yellow;
+}
+
+.button {
+    position: relative;
+}
