@@ -187,10 +187,9 @@ iframe {
 }
 
 .form {
-    float: right;
-    margin-right: 10vw;
-    margin-top: 200px;
-    font-style: normal;
+    position: relative;
+        left: 20%;
+    margin-top: 30%
 }
 
 .form__field {
