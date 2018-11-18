@@ -38,6 +38,7 @@ body {
 
 .page-content {
     margin-top: -20px;
+    margin-bottom: -20px;
     margin-left: 180px;
 
     background: black;
@@ -88,8 +89,8 @@ body {
         left: 25%;
     margin-top: 30%;
     margin-right: 5%;
-    width: 20%;
-    min-width: 300px;
+    width: 30%;
+    min-width: 200px;
     
     background: green;
     border-bottom: 3px solid blue;
@@ -165,8 +166,10 @@ iframe {
 
 /* CONTACT */
 .contact-details {
-        padding-left: 20%;
-        margin-top: 150px;
+    padding-left: 20%;
+    margin-top: 150px;
+
+    background: blue;
 }
 
 .contact-image {
@@ -179,9 +182,11 @@ iframe {
 }
 
 .form {
+    width: 20%;
     position: relative;
         left: 20%;
-    margin-top: 30%
+    margin-top: 15%;
+    background: purple;
 }
 
 .form__field {
@@ -189,7 +194,12 @@ iframe {
 }
 
 .form__input {
+    display: block;
     border: 0px;
     border-radius: 5px;
     padding: 5px 15px;
+}
+
+.form__label {
+    display: block;
 }
