@@ -5,9 +5,6 @@ body {
     background: orange;
 }
 
-.screen-reader-only {
-    color: transparent
-}
 
 /* HEADER & FOOTER */
 .page-header {
@@ -33,17 +30,28 @@ body {
     list-style-type: none
 }
 /* MAIN */
+.screen-reader-only {
+    color: transparent
+}
 
 .page-content {
-    position: relative;
-        left: 200px;
-    width: 70%;
-    overflow: hidden;
+    margin-top: -20px;
+    margin-left: 180px;
+
+    background: black;
 }
 
 .content-section {
-    min-height: 100vh; 
-    background: red
+    min-height: 100vh;
+    padding-right: 5%;
+
+    background: red;
+}
+
+.content-section__header {
+    text-transform: uppercase;
+    text-align: right;
+    padding-top: 75px;
 }
 
 /* BAND MEMBERS */
