@@ -8,7 +8,8 @@ body {
     width: 100%;
 
     font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
-
+    font-size: 13px;
+    letter-spacing: 1.5px;
     background: orange;
 }
 
@@ -26,7 +27,7 @@ ul {
     font-size: 28px;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 4.5px;
     color: #ec008c;
 }
 
@@ -48,7 +49,7 @@ ul {
     font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 6.7px;
     color: #ec008c;
     text-decoration: none;
 }
@@ -125,9 +126,23 @@ ul {
     border-bottom: 3px solid blue;
 }
 
-.about-section__desc-header{
+.about-section__desc-header {
     display: flex;
     flex-wrap: wrap;
+
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3.8px;
+    color: #ccc8ff;
+    text-decoration: none;
+}
+
+.about-section__desc-text{
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    color: #ccc8ff;
+    text-decoration: none;
 }
 
 
