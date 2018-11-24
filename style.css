@@ -1,8 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
+
     width: 100%;
     background: orange;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.screen-reader-only {
+    color: transparent;
 }
 
 
@@ -15,10 +34,6 @@ body {
     background: yellow;
 }
 
-.page-navigation__items {
-    list-style-type: none;
-}
-
 .page-footer {
     position: fixed;
         bottom: 10px;
@@ -26,20 +41,15 @@ body {
     background: yellow;
 }
 
-.social-links__item {
-    list-style-type: none;
-}
-
 
 /* MAIN */
-.screen-reader-only {
-    color: transparent;
-}
 
 .page-content {
     margin-top: -20px;
     margin-bottom: -20px;
-    margin-left: 180px;
+    margin-left: 220px;
+    padding: 0 10%;
+    text-align: right;
 
     background: black;
 }
