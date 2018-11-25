@@ -105,6 +105,8 @@ ul {
     text-align: left;
 
     font-size: 13px;
+
+    line-height: 3px;
     
     
     letter-spacing: 1.5px;
@@ -200,7 +202,11 @@ ul {
 .concerts__info {
     margin: 0px;
 
+
+
     position: relative;
+
+    line-height: 3px;
 
     /* background-color: pink; */
     margin-right: 30%;
