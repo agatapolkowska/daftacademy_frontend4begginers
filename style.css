@@ -257,7 +257,11 @@ ul {
     letter-spacing: 1.6px;
     text-transform: uppercase;
     color: #ccc8ff;
-    background-color: rgba(204, 200, 255, 0.1)
+    background-color: rgba(204, 200, 255, 0.1);
+
+    border-radius: 5px;
+    border-color: transparent;
+
 }
 
 
