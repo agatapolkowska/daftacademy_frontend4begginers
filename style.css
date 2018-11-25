@@ -340,6 +340,7 @@ iframe {
 
 .form__field {
     margin: 10px 0;
+    position: relative;
 }
 
 .form__input {
@@ -358,4 +359,22 @@ iframe {
     text-decoration: none;
 
     text-align: left;
+}
+
+.form__button {
+    font-weight:350;
+    font-size: 12px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: #ccc8ff;
+    background-color: rgba(204, 200, 255, 0.1);
+
+    border-radius: 5px;
+    border-color: transparent;
+
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 10px;
+
 }
