@@ -10,7 +10,8 @@ body {
     font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
     font-size: 13px;
     letter-spacing: 1.5px;
-    background: orange;
+    background: #25072e;
+    background-attachment: fixed;
 }
 
 h1, h2, h3 {
@@ -42,7 +43,7 @@ ul {
         top: 10px;
         left: 20px;
 
-    background: yellow;
+    /* background: yellow; */
 }
 
 .page-navigation__item {
@@ -57,8 +58,8 @@ ul {
 .page-footer {
     position: fixed;
         bottom: 10px;
-
-    background: yellow;
+/* 
+    background: yellow; */
 }
 
 
@@ -71,14 +72,14 @@ ul {
     padding: 0 10%;
     text-align: right;
 
-    background: black;
+    /* background: black; */
 }
 
 .content-section {
     min-height: 100vh;
     padding-right: 5%;
 
-    background: red;
+    /* background: red; */
 }
 
 .content-section__header {
@@ -95,13 +96,13 @@ ul {
     list-style-type: none;
     justify-content: center;
 
-    background: blue;
+    /* background: blue; */
 }
 
 .band-members__item { 
     min-width: 200px;
 
-    background-color:purple;
+    /* background-color:purple; */
 }
 
 
@@ -111,7 +112,7 @@ ul {
     width: 60%;
     min-width: 200px;
 
-    border-top: 3px solid blue;
+    border-top: 3px solid #ec008c;
 }
 
 .about-section__desc {
@@ -122,8 +123,8 @@ ul {
     width: 30%;
     min-width: 200px;
     
-    background: green;
-    border-bottom: 3px solid blue;
+    background: #25072e;
+    border-bottom: 3px solid #ec008c;
 }
 
 .about-section__desc-header {
@@ -153,7 +154,7 @@ ul {
     justify-content: flex-end;
     margin-left: 20%; 
 
-    background: blue;
+    /* background: blue; */
 }
 
 .concerts__item {
@@ -162,14 +163,14 @@ ul {
     min-width: 200px;
 
     position: relative;
-    background: #ebebeb;
+    /* background: #ebebeb; */
     /* width: 400px; */
 }
 
 .concerts__image {
     width: 100%;
     height: auto;
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid #ec008c;
 }
 
 .concerts__info {
@@ -177,7 +178,7 @@ ul {
 
     position: relative;
 
-    background-color: pink;
+    /* background-color: pink; */
     margin-right: 30%;
 }
 
@@ -206,6 +207,7 @@ ul {
     letter-spacing: 1.6px;
     text-transform: uppercase;
     color: #ccc8ff;
+    background-color: rgba(204, 200, 255, 0.1)
 }
 
 
@@ -215,8 +217,8 @@ iframe {
     float: right;
     margin-top: 30px;
     width: 70%;
-    background: green;
-    border-top: 3px solid yellow;
+    /* background: green; */
+    border-top: 3px solid #ec008c;
 }
 
 
@@ -229,7 +231,7 @@ iframe {
     margin-left: 20%;
     padding-bottom: 5%;
     
-    background: blue;
+    /* background: blue; */
 }
 
 .gallery__item {
@@ -240,7 +242,7 @@ iframe {
 
 .gallery__image {
     width: 100%; 
-    border-top: 3px solid yellow;
+    border-top: 3px solid #ec008c;
 }
 
 
@@ -249,7 +251,7 @@ iframe {
     padding-left: 20%;
     margin-top: 150px;
 
-    background: blue;
+    /* background: blue; */
 }
 
 .contact-image {
@@ -266,8 +268,8 @@ iframe {
     position: relative;
         left: 20%;
     margin-top: 15%;
-
-    background: purple;
+/* 
+    background: purple; */
 }
 
 .form__field {
