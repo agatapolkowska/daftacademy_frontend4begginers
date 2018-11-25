@@ -301,6 +301,14 @@ iframe {
     padding-left: 20%;
     margin-top: 150px;
 
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    color: rgba(204, 200, 255, 0.5);
+    text-decoration: none;
+
+    text-align: left;
+    font-style: normal;
+
     /* background: blue; */
 }
 
@@ -335,4 +343,11 @@ iframe {
 
 .form__label {
     display: block;
+
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    color: rgba(204, 200, 255, 0.5);
+    text-decoration: none;
+
+    text-align: left;
 }
