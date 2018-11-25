@@ -28,26 +28,12 @@ ul {
     padding: 0;
 }
 
-.content-section__header {
-    font-size: 28px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 4.5px;
-    color: #ec008c;
-}
-
-.screen-reader-only {
-    color: transparent;
-}
-
 
 /* HEADER & FOOTER */
 .page-header {
     position: fixed;
         top: 10px;
         left: 20px;
-
-    /* background: yellow; */
 }
 
 .page-navigation__item {
@@ -62,34 +48,35 @@ ul {
 .page-footer {
     position: fixed;
         bottom: 10px;
-/* 
-    background: yellow; */
 }
 
 
 /* MAIN */
-
 .page-content {
     margin-top: -20px;
     margin-bottom: -20px;
     margin-left: 220px;
     padding: 0 10%;
-    text-align: right;
-
-    /* background: black; */
 }
 
 .content-section {
     min-height: 100vh;
     padding-right: 5%;
-
-    /* background: red; */
 }
 
 .content-section__header {
-    text-transform: uppercase;
-    text-align: right;
     padding-top: 75px;
+    text-align: right;
+
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4.5px;
+    color: #ec008c;
+}
+
+.screen-reader-only {
+    color: transparent;
 }
 
 
@@ -99,28 +86,19 @@ ul {
     flex-wrap: wrap;
     list-style-type: none;
     justify-content: center;
-
     margin-top: 50vh;
     transform: translateY(-50%);
-
-    /* background: blue; */
 }
 
 .band-members__item { 
     min-width: 200px;
-
     text-align: left;
 
     font-size: 13px;
-
     line-height: 3px;
-    
-    
     letter-spacing: 1.5px;
     color: #ccc8ff;
     text-decoration: none;
-
-    /* background-color:purple; */
 }
 
 .band-members__name {
@@ -131,8 +109,6 @@ ul {
 .band-members__desc {
     color: rgba(204, 200, 255, 0.5);
 }
-
-
 
 
 /* ABOUT */
@@ -159,7 +135,6 @@ ul {
 .about-section__desc-header {
     display: flex;
     flex-wrap: wrap;
-
     text-align: left;
 
     font-size: 15px;
@@ -170,13 +145,13 @@ ul {
     text-decoration: none;
 }
 
-.about-section__desc-text{
+.about-section__desc-text {
+    text-align: left;
+
     font-size: 13px;
     letter-spacing: 1.5px;
     color: rgba(204, 200, 255, 0.5);
     text-decoration: none;
-
-    text-align: left;
 }
 
 
@@ -186,78 +161,53 @@ ul {
     flex-wrap: wrap;
     justify-content: flex-end;
     margin-left: 20%; 
-
-    /* background: blue; */
 }
 
 .concerts__item {
     width: 30%;
     margin: 10px 0px 20px 40px;
     min-width: 200px;
-
     position: relative;
-    /* background: #ebebeb; */
-    /* width: 400px; */
 }
 
 .concerts__image {
     width: 100%;
     height: auto;
+
     border-bottom: 3px solid #ec008c;
 }
 
 .concerts__info {
     margin: 0px;
-
-
-
     position: relative;
-
     line-height: 3px;
-
-    /* background-color: pink; */
     margin-right: 30%;
 }
 
 .concerts__date {
-    /* float: left; */
     display: block;
-
-
     text-align: left;
 
- 
     font-size: 13px;
-    
-    
     letter-spacing: 1.5px;
     color: #ccc8ff;
     text-decoration: none;
 }
 
 .concerts__location {
-    /* float: left; */
     display: block;
-
     text-align: left;
-
  
     font-size: 13px;
-    
-    
     letter-spacing: 1.5px;
     color: rgba(204, 200, 255, 0.5);
 }
 
 .button {
-    /* float: right;
-    position: relative;
-        top: -75px; */
-
-        position: absolute;
-        top: 50%;  /* Górna krawędź .concert2__action ustawi się od góry .concert2 o 50% jego wysokości */
+    position: absolute;
+        top: 50%;
         right: 20px;
-        transform: translateY(-50%) translateX(100%); /* Przesuwamy .concert2__action o połowę wysokości w górę, żeby to środek .concert2__action był wyśrodkowany, a nie jego górna krawędź */
+        transform: translateY(-50%) translateX(100%);
 
     font-weight:350;
     font-size: 12px;
@@ -278,7 +228,7 @@ iframe {
     float: right;
     margin-top: 30px;
     width: 70%;
-    /* background: green; */
+
     border-top: 3px solid #ec008c;
 }
 
@@ -291,8 +241,6 @@ iframe {
     list-style-type: none;
     margin-left: 20%;
     padding-bottom: 5%;
-    
-    /* background: blue; */
 }
 
 .gallery__item {
@@ -303,6 +251,7 @@ iframe {
 
 .gallery__image {
     width: 100%; 
+
     border-top: 3px solid #ec008c;
 }
 
@@ -311,16 +260,13 @@ iframe {
 .contact-details {
     padding-left: 20%;
     margin-top: 150px;
+    text-align: left;
 
     font-size: 13px;
     letter-spacing: 1.5px;
     color: rgba(204, 200, 255, 0.5);
     text-decoration: none;
-
-    text-align: left;
     font-style: normal;
-
-    /* background: blue; */
 }
 
 .contact-image {
@@ -329,7 +275,6 @@ iframe {
     float: left;
     width: 40%;
     min-width: 200px;
-
 }
 
 .form {
@@ -337,8 +282,6 @@ iframe {
     position: relative;
         left: 20%;
     margin-top: 15%;
-/* 
-    background: purple; */
 }
 
 .form__field {
@@ -355,16 +298,20 @@ iframe {
 
 .form__label {
     display: block;
+    text-align: left;
 
     font-size: 13px;
     letter-spacing: 1.5px;
     color: rgba(204, 200, 255, 0.5);
     text-decoration: none;
-
-    text-align: left;
 }
 
 .form__button {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 10px;
+
     font-weight:350;
     font-size: 12px;
     letter-spacing: 1.6px;
@@ -374,10 +321,4 @@ iframe {
 
     border-radius: 5px;
     border-color: transparent;
-
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 10px;
-
 }
