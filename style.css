@@ -209,11 +209,31 @@ ul {
 .concerts__date {
     /* float: left; */
     display: block;
+
+
+    text-align: left;
+
+ 
+    font-size: 13px;
+    
+    
+    letter-spacing: 1.5px;
+    color: #ccc8ff;
+    text-decoration: none;
 }
 
 .concerts__location {
     /* float: left; */
     display: block;
+
+    text-align: left;
+
+ 
+    font-size: 13px;
+    
+    
+    letter-spacing: 1.5px;
+    color: rgba(204, 200, 255, 0.5);
 }
 
 .button {
