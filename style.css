@@ -50,6 +50,11 @@ ul {
         bottom: 10px;
 }
 
+.social-links__icon {
+    width: 20px;
+    margin: 5px;
+}
+
 
 /* MAIN */
 .page-content {
