@@ -10,8 +10,12 @@ body {
     font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
     font-size: 13px;
     letter-spacing: 1.5px;
-    background: #25072e;
+
+    background-color: #25072e;
+    background-image: url("img/background.svg");
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1, h2, h3 {
