@@ -34,6 +34,8 @@ ul {
     position: fixed;
         top: 10px;
         left: 20px;
+
+    margin-left: 20px;
 }
 
 .page-navigation__item {
@@ -48,6 +50,8 @@ ul {
 .page-footer {
     position: fixed;
         bottom: 10px;
+
+    margin-left: 20px;
 }
 
 .social-links__icon {
@@ -132,6 +136,7 @@ ul {
     margin-right: 5%;
     width: 30%;
     min-width: 200px;
+    padding: 20px;
     
     background: #25072e;
     border-bottom: 3px solid #ec008c;
@@ -299,6 +304,7 @@ iframe {
     border: 0px;
     border-radius: 5px;
     padding: 5px 15px;
+    margin-top: 7px;
 }
 
 .form__label {
