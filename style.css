@@ -160,6 +160,10 @@ ul {
     width: 30%;
     margin: 10px 0px 20px 40px;
     min-width: 200px;
+
+    position: relative;
+    background: #ebebeb;
+    /* width: 400px; */
 }
 
 .concerts__image {
@@ -170,20 +174,38 @@ ul {
 
 .concerts__info {
     margin: 0px;
+
+    position: relative;
+
+    background-color: pink;
+    margin-right: 30%;
 }
 
 .concerts__date {
-    float: left;
+    /* float: left; */
+    display: block;
 }
 
 .concerts__location {
-    float: left;
+    /* float: left; */
+    display: block;
 }
 
 .button {
-    float: right;
+    /* float: right;
     position: relative;
-        top: -75px;
+        top: -75px; */
+
+        position: absolute;
+        top: 50%;  /* Górna krawędź .concert2__action ustawi się od góry .concert2 o 50% jego wysokości */
+        right: 20px;
+        transform: translateY(-50%) translateX(100%); /* Przesuwamy .concert2__action o połowę wysokości w górę, żeby to środek .concert2__action był wyśrodkowany, a nie jego górna krawędź */
+
+    font-weight:350;
+    font-size: 12px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: #ccc8ff;
 }
 
 
