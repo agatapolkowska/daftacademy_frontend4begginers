@@ -102,8 +102,28 @@ ul {
 .band-members__item { 
     min-width: 200px;
 
+    text-align: left;
+
+    font-size: 13px;
+    
+    
+    letter-spacing: 1.5px;
+    color: #ccc8ff;
+    text-decoration: none;
+
     /* background-color:purple; */
 }
+
+.band-members__name {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.band-members__desc {
+    color: rgba(204, 200, 255, 0.5)
+}
+
+
 
 
 /* ABOUT */
@@ -131,6 +151,8 @@ ul {
     display: flex;
     flex-wrap: wrap;
 
+    text-align: left;
+
     font-size: 15px;
     font-weight: bold;
     text-transform: uppercase;
@@ -144,6 +166,8 @@ ul {
     letter-spacing: 1.5px;
     color: #ccc8ff;
     text-decoration: none;
+
+    text-align: left;
 }
 
 
