@@ -1,21 +1,35 @@
+
+
+/* CSS RESET */
+
 * {
     box-sizing: border-box;
 }
 
+
+
+/* GENERAL SETUP */
+
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
+    /* width: 100%; */
 
-    font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+    /* font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
     font-size: 13px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.5px; */
+
+    color: rgba(204, 200, 255, 0.8);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
 
     background-color: #25072e;
     background-image: url("img/background.svg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 h1, h2, h3 {
@@ -28,45 +42,73 @@ ul {
     padding: 0;
 }
 
-
-/* HEADER & FOOTER */
-.page-header {
-    position: fixed;
-        top: 10px;
-        left: 20px;
-
-    margin-left: 20px;
+a {
+    color: #EF008E;
+    text-decoration: none;
 }
 
-.page-navigation__item {
+.screen-reader-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+
+
+/* DOCUMENT STRUCTURE */
+
+.page-header {
+    position: fixed;
+        top: 50px;
+        left: 50px;
+/* 
+    margin-left: 20px; */
+}
+
+.page-footer {
+    position: fixed;
+        bottom: 50px;
+        left: 50px;
+
+    /* margin-left: 20px; */
+}
+
+.page-content {
+    /* margin-top: -20px;
+    margin-bottom: -20px; */
+    margin-left: 220px;
+    padding: 0 10%;
+}
+
+
+
+/* NAVIGATION */
+
+.page-navitagion__item a {
+    color: rgba(239, 0, 142, 0.6);
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 6.7px;
+}
+
+
+/* .page-navigation__item {
     font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 6.7px;
     color: #ec008c;
     text-decoration: none;
-}
-
-.page-footer {
-    position: fixed;
-        bottom: 10px;
-
-    margin-left: 20px;
-}
+} */
 
 .social-links__icon {
     width: 20px;
     margin: 5px;
 }
 
-
-/* MAIN */
-.page-content {
-    margin-top: -20px;
-    margin-bottom: -20px;
-    margin-left: 220px;
-    padding: 0 10%;
-}
 
 .content-section {
     min-height: 100vh;
