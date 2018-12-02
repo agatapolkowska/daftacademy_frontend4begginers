@@ -1,13 +1,3 @@
-/*
-Przeglądarki internetowe nadają znacznikom HTML wartości początkowe,
-które się różnią w zależności od producenta (np. Chrome, Firefox, Opera, Internet Explorer, Microsoft Edge).
-Dlatego popularną praktyką jest tworzenie tzw. resetów, 
-czyli plików CSS zawierających reguły, które nadpisują te wartości, 
-aby były one jednolite niezalenie od przeglądarki.
-
-Więcej na ten temat: https://cssreset.com/what-is-a-css-reset/
-*/
-
 * {
     box-sizing: border-box;
 }
@@ -15,20 +5,13 @@ Więcej na ten temat: https://cssreset.com/what-is-a-css-reset/
 body {
     margin: 0;
     padding: 0;
-    /* 
-    "background-image" - ustawiamy obrazek z projektu graficznego jako tło całej witryny
-    "background-size: cover" sprawia, że obrazek tła będzie skalowany tak, żeby wypełniać ekran w całości
-        niezależnie od proporcji ekranu
-    ""
-    
-    */
+
     background-image: url('./images/background.svg');
-    /* 
-    */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-color: #25072e;
 }
 
 h1, h2, h3 {
@@ -41,14 +24,6 @@ ul {
     padding: 0;
 }
 
-/*
-ZAGADNIENIE PONADPROGRAMOWE
-
-Rekomendowany zestaw właściwości, które pozwalają na ukrycie tekstu w taki sposób,
-że będzie niewidoczny do standardowego użytkownika, a czytniki ekranowe wciąż będą go czytać.
-
-Więcej na ten temat: https://webaim.org/techniques/css/invisiblecontent/
-*/
 .screen-reader-only {
     position: absolute;
     left: -10000px;
@@ -58,11 +33,8 @@ Więcej na ten temat: https://webaim.org/techniques/css/invisiblecontent/
     overflow: hidden;
 }
 
-/* 
-######################################
-TYPOGRAFIA
-######################################
-*/
+
+/* TEXT STYLE */
 
 body {
     color: rgba(204, 200, 255, 0.8);
@@ -76,11 +48,8 @@ a {
     text-decoration: none;
 }
 
-/* 
-######################################
-PRZYCISKI
-######################################
-*/
+
+/* BUTTON STYLE */
 
 .button {
     padding: 7px 15px;
@@ -96,11 +65,8 @@ PRZYCISKI
     cursor: pointer;
 }
 
-/* 
-######################################
-FORMULARZE
-######################################
-*/
+
+/* FORM STYLE */
 
 .form__field {
     margin-bottom: 10px;
@@ -121,18 +87,9 @@ FORMULARZE
     background-color: rgba(219, 216, 251, 0.1);
 }
 
-/* 
-######################################
-GŁÓWNY LAYOUT STRONY
-######################################
-*/
 
-/* 
-Ustawiając sekcje nagłówka i stopki w pozycji 'fixed' sprawiamy,
-że niezależnie od pozycji paska przewijania elementy te będą znajdowały się
-w tej samej pozycji względem okna przeglądarki. 
-Natomiast pozycję tę ustawiamy za pomocą parametrów 'top', 'bottom', 'right', 'left'.
-*/
+/* PAGE LAYOUT */
+
 .page-header {
     position: fixed;
     top: 50px;
@@ -145,28 +102,13 @@ Natomiast pozycję tę ustawiamy za pomocą parametrów 'top', 'bottom', 'right'
     left: 50px;
 }
 
-/*
-Lewy margines ustawiony na kontenerze z główną zawartością strony sprawia,
-że nie będzie ona nachodzić na nagłówek i stopkę niezależnie od pozycji paska przewijania.
-Na projekcie graficznym sekcja menu ma szerokość około 170px i jest oddalona od krawędzi ekranu
-o 50px, więc można założyć, że 220px marginesu będzie wartością stosunkowo bezpieczną.
-Z kolei spady (padding) nadane na kontener wyznaczają minimalną odległość, na jaką będzie oddalona
-treść strony od otaczających ją granic kontenera (wartość "0 10%" jest 
-skrótem od padding-top: 0, padding-bottom: 0, padding-left: 10%, padding-right: 10%).
-Więcej skrótów paddingu: https://developer.mozilla.org/en-US/docs/Web/CSS/padding
-Właściwość "text-align: right" przykleja zawartość do prawej strony
-(oddziałuje na elementy, które są elementami inline'owymi, np. tekst, znaczniki <a>, <span> czy elementy z nadanym stylem "display: inline-block").
-*/
 .page-content {
     margin-left: 220px;
     padding: 0 10%;
 }
 
-/* 
-######################################
-NAWIGACJA
-######################################
-*/
+
+/* NAVIGATION */
 
 .page-navigation__items {
     padding-top: 15px;
@@ -179,12 +121,8 @@ NAWIGACJA
     letter-spacing: 6.7px;
 }
 
-/* 
-######################################
-LINKI DO SOCIAL MEDIA
-######################################
-*/
 
+/* SOCIAL MEDIA */
 
 .social-links__item + .social-links__item {
     margin-top: 15px;
@@ -195,45 +133,9 @@ LINKI DO SOCIAL MEDIA
     height: 20px;
 }
 
-/* 
-######################################
-STYLE WSPÓLNE DLA WSZYSTKICH SEKCJI
-######################################
-*/
 
-/* 
-Projekt graficzny zakłada, że każda sekcja strony będzie wypełniać całą wysokość okna przeglądarki
-lub więcej, jeśli zawartość danej sekcji jest wyższa. Dlatego świetnym rozwiązaniem
-będzie użycie jednostki "vh", która oznacza 1% wysokości okna przeglądarki z właściwością "min-height",
-która wymusza wysokość elementu na zadaną wartość lub wyższą.
+/* CONTENT STYLE */
 
-Następnie sekcje zostają zdefiniowane jako kontener flexbox (display: flex) co pozwala
-na większą kontrolę nad zachowaniem elementów wewnątrz.
-Zakładamy, ze każda sekcja strony ma bazową strukturę w formacie:
-
-    <section class="content-section">
-        <h2 class="content-section__header">{nagłówek sekcji}</h2>
-        <div class="content-section__body">
-            {zawartość sekcji}
-        </div>
-    </section>
-
-Ustawienie wartości flex-direction na "column" sprawia, że wszystkie elementy umieszczone
-bezpośrednio w "content-section" (czyli "content-section__header" oraz "content-section__body")
-będą ułożone jedno pod drugim.
-
-Pole "justify-content" definiuje ułożenie elementów wewnątrz kontenera wzdłuż jego osi
-(dla "flex-direction: column" jest to oś pionowa, dla "flex-direction: row" - oś pozioma).
-W naszym przypadku ustawiamy wartość "center", czyli wyśrodkowujemy elementy w pionie.
-
-"Align-items" działa podobnie do powyższego, ale ustawia elementy w osi prostopadłej do kierunku flex-direction.
-Ponadto tak samo faktyczny kierunek uzależniony jest od flex-direction.
-
-Wartość flex-grow: 1 na elemencie "content-section__body" sprawia, że będzie się on rozrastał
-zajmując puste miejsce niezajęte przez sąsiadujące mu elementy.
-
-Więcej szczegółów na temat działania Flexbox można znaleźć na: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-*/
 .content-section {
     display: flex;
     flex-direction: column;
@@ -255,11 +157,8 @@ Więcej szczegółów na temat działania Flexbox można znaleźć na: https://c
     flex-grow: 1;
 }
 
-/* 
-######################################
-SEKCJA "HOME"
-######################################
-*/
+
+/* SECTION MAIN */
 
 .content-section.home-section {
     align-items: center;
@@ -271,37 +170,14 @@ SEKCJA "HOME"
     align-items: center;
 }
 
-/*
-Tymczasowo ukrywamy tę sekcję, zajmiemy się nią na następnych zajęciach.
-*/
 .band-members__name,
 .band-members__desc {
     display: none;
 }
 
-/* 
-######################################
-SEKCJA "ABOUT"
-######################################
-*/
 
-/*
-Żeby ustawić opis zespołu w rogu zdjęcia, można zastosować popularną sztuczkę z pozycjonowaniem.
-Wykorzystuje ona właściwość elementów z "position: absolute", których położenie jest ustalane
-względem najbliższego mu rodzica, który jest pozycjonowany (ma ustawione "position" na inne
-niż "static", czyli "absolute", "relative", "fixed" lub "sticky").
+/* SECTION ABOUT  */
 
-Dlatego gdy na jego rodzica "about" ustawimy "position: relative" (które bez parametrów
-dodatkowych top, left, bottom, right, nic nie zmienia w jego pozycji), to zawarty w nim
-element "about__desc" ustawia się absolutnie względem niego.
-
-Gdy dodamy wartości "left: -290px" i "bottom: -115px", wtedy "about__desc" będzie wystawać
-z lewego dolnego rogu "about" dokładnie o te odległości.
-
-Natomiast aby nie dopuścić do sytuacji, że wystający "about__desc" nachodził
-na sąsiadujące sekcje na stronie, nadajemy "about" marginesy adekwatne do odległości
-podane przy pozycjonowaniu "about_desc".
-*/
 .about {
     position: relative;
     margin-left: 290px;
@@ -331,11 +207,8 @@ podane przy pozycjonowaniu "about_desc".
     border-bottom: 3px solid #EF008E;
 }
 
-/* 
-######################################
-SEKCJA "CONCERTS"
-######################################
-*/
+
+/* SECTION CONCERTS */
 
 .concerts {
     display: flex;
@@ -379,21 +252,15 @@ SEKCJA "CONCERTS"
     letter-spacing: 3.8px;
 }
 
-/* 
-######################################
-SEKCJA "VIDEO"
-######################################
-*/
+
+/* SECTION VIDEO */
 
 .embedded-video {
     border-top: 3px solid #EF008E;
 }
 
-/* 
-######################################
-SEKCJA "PHOTOS"
-######################################
-*/
+
+/* SECTION PHOTOS */
 
 .gallery {
     display: flex;
@@ -412,11 +279,8 @@ SEKCJA "PHOTOS"
     border-top: 3px solid #EF008E;
 }
 
-/* 
-######################################
-SEKCJA "CONTACT"
-######################################
-*/
+
+/* SECTION CONTACT */
 
 .contact {
     display: flex;
