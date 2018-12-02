@@ -3,6 +3,8 @@
 }
 
 body {
+    width: 100%;
+
     margin: 0;
     padding: 0;
 
@@ -103,6 +105,8 @@ a {
 }
 
 .page-content {
+    margin-top: -20px;
+    margin-bottom: -20px;
     margin-left: 220px;
     padding: 0 10%;
 }
@@ -142,6 +146,7 @@ a {
     justify-content: center;
     align-items: flex-end;
     min-height: 100vh;
+    padding-right: 5%;
 }
 
 .content-section__header {
@@ -168,6 +173,10 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+
 }
 
 .band-members__name,
@@ -175,17 +184,26 @@ a {
     display: none;
 }
 
-
+.band-members__item { 
+    min-width: 200px;
+    text-align: left;
+}
+    
 /* SECTION ABOUT  */
 
 .about {
     position: relative;
     margin-left: 290px;
     margin-bottom: 115px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .about__image {
     max-width: 100%;
+    min-width: 200px;
     border-top: 3px solid #EF008E;
 }
 
@@ -255,8 +273,11 @@ a {
 
 /* SECTION VIDEO */
 
-.embedded-video {
-    border-top: 3px solid #EF008E;
+iframe {
+        width: 85%;
+        height: 70vh;
+    
+    border-top: 3px solid #ec008c;
 }
 
 
@@ -264,19 +285,22 @@ a {
 
 .gallery {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    width: 80%;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin-left: 20%;
+    padding-bottom: 5%;
 }
 
 .gallery__item {
-    flex-basis: 33.3%;
-    padding: 0 0 20px 20px;
+    width: 30%; 
+    min-width: 200px;
+    margin: 15px 0px 0px 15px;
 }
 
 .gallery__image {
-    max-width: 100%;
-    border-top: 3px solid #EF008E;
+    width: 100%; 
+    border-top: 3px solid #ec008c;
 }
 
 
@@ -306,3 +330,6 @@ a {
 .contact__form .button {
     margin-top: 20px;
 }
+
+
+
