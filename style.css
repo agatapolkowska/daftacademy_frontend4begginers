@@ -332,4 +332,31 @@ iframe {
 }
 
 
+/* SMARTPHONES */
+@media only screen and (max-width : 768px) {
+    .page-header {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+    .page-content {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .content-section {
+        padding: 2% 3%;
+        min-height: 0;
+    }
+
+    .band-members {
+        margin-top: 10vh;
+    }
+
+    .page-footer {
+        width: 100%;
+        position: relative;
+        margin: 60px 0 30px 0;
+    }
+}
+
 
