@@ -333,7 +333,7 @@ iframe {
 
 
 /* SMARTPHONES */
-@media only screen and (max-width : 768px) {
+@media screen and (max-width : 768px) {
     .page-header {
         position: relative;
         width: 100%;
@@ -351,6 +351,16 @@ iframe {
     .band-members {
         margin-top: 10vh;
     }
+
+    .about__desc {
+        position: static;
+    display: block;
+    width: 100%;
+    }
+      
+      .about__image {
+        margin-right: 0;
+      }
 
     .page-footer {
         width: 100%;
