@@ -333,6 +333,7 @@ iframe {
 
 
 /* SMARTPHONES */
+
 @media screen and (max-width : 768px) {
     .page-header {
         position: relative;
@@ -369,4 +370,17 @@ iframe {
     }
 }
 
+
+/* TABLETS */
+
+@media screen and (max-width : 1024px) {
+.about__desc {
+    position: static;
+display: block;
+width: 100%;
+}
+  
+  .about__image {
+    margin-right: 0;
+  }
 
