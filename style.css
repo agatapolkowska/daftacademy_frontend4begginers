@@ -183,20 +183,38 @@ a {
     transition: all 0.1s linear;
 }
 
-.band-members__image:hover {
-    opacity: 1;
+.band-members__name {
+color: #CCC8FF;
+font-size: 15px;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 4.5px
 }
 
 .band-members__name,
 .band-members__desc {
-    display: none;
+    opacity: 0;
+    transition: all 0.1s linear;
 }
 
 .band-members__item { 
     min-width: 200px;
     text-align: left;
 }
+
+.band-members__item:hover .band-members__image { 
+    opacity: 1;
+}
+
+.band-members__item:hover .band-members__name { 
+    opacity: 1;
+}
+
+.band-members__item:hover .band-members__desc { 
+    opacity: 0.5;
+}
     
+
 /* SECTION ABOUT  */
 
 .about {
