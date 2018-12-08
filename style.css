@@ -176,7 +176,15 @@ a {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: center;
+}
 
+.band-members__image {
+    opacity: 0.4;
+    transition: all 0.1s linear;
+}
+
+.band-members__image:hover {
+    opacity: 1;
 }
 
 .band-members__name,
