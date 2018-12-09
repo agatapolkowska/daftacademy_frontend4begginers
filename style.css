@@ -88,6 +88,13 @@ a {
     border-color: #CCC8FF80;
     outline: none
 }
+
+.button:disabled {
+    color: #CCC8FF50;
+    background-color: #CCC8FF10;
+    outline: none
+}
+
 /* FORM STYLE */
 
 .form__field {
