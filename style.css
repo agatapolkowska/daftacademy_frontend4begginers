@@ -164,6 +164,30 @@ a {
     height: 20px;
 }
 
+.social-links__icon {
+    opacity: 0.8;
+    transition: all 0.1s linear;
+}
+
+.social-links__icon:hover {
+    opacity:1;
+    outline: none
+}
+
+.social-links__icon:active {
+    opacity:0.6;
+    outline: none
+}
+
+.social-links__icon:focus {
+    opacity:1;
+    outline: none
+}
+
+.social-links__icon:disabled {
+    opacity:0.4;
+    outline: none
+}
 
 /* CONTENT STYLE */
 
