@@ -400,7 +400,12 @@ iframe {
 .gallery__image {
     width: 100%; 
     border-top: 3px solid #ec008c;
+    transition: all 0.1s linear;
 }
+
+.gallery__image:hover {
+    transform: scale(1.1);  
+  }
 
 
 /* SECTION CONTACT */
