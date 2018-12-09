@@ -65,8 +65,19 @@ a {
     text-transform: uppercase;
     letter-spacing: 1.6px;
     cursor: pointer;
+
+    transition: all 0.1s linear;
 }
 
+.button:active {
+    color: #CCC8FF;
+    background-color: #CCC8FF20;
+}
+
+.button:hover {
+    color: #CCC8FF;
+    background-color: #CCC8FF20;
+}
 
 /* FORM STYLE */
 
