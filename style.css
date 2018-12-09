@@ -70,15 +70,24 @@ a {
 }
 
 .button:active {
-    color: #CCC8FF;
-    background-color: #CCC8FF20;
+    color: #CCC8FF50;
+    background-color: #CCC8FF30;
+    border-color: #CCC8FF20;
+    outline: none
 }
 
 .button:hover {
     color: #CCC8FF;
     background-color: #CCC8FF20;
+    outline: none
 }
 
+.button:focus {
+    color: #CCC8FF;
+    background-color: #CCC8FF20;
+    border-color: #CCC8FF80;
+    outline: none
+}
 /* FORM STYLE */
 
 .form__field {
